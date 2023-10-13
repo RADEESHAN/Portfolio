@@ -328,7 +328,7 @@ form textarea {
     line-height: 40px;
     background: #fff;
     border-radius: 50%;
-    width: 40%;
+    width: 40px;
     height: 40px;
 }
 .copyright{
@@ -339,4 +339,8 @@ form textarea {
 }
 .copyright a {
     color: #22cf91;
+}
+/* Responsive  54 min*/
+@media (max-width:991px){
+    
 }
