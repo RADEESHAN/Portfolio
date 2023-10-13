@@ -171,7 +171,6 @@ display: none;
     font-weight: 400;
     margin-left: 1rem;
 }
-
 .skills-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -179,49 +178,113 @@ display: none;
     gap: 2rem;
     margin-top: 4rem;
 }
+
 .skills-img{
     width: 80%;
+    padding-left: 4rem;
     padding-left: 4rem;
     object-position: center;
 }
 .bars-box{
     position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 1rem;
-
+    justify-content: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
 }
 .bars-box h3,span{
     font-size: 1.2rem;
     font-weight: 500;
 }
-.skills-container .bar .light-bar{
+.light-bar{
     position: absolute;
     bottom: 0;
-    left:0;
+    left: 0;
     width: 100%;
-    height: 0.6rem;
-    background:hsla(260,100%,44%,0.4);
+    height: 0.5rem;
+    background: hsl(260,100%,44%,0.4);
     border-radius: 0.5rem;
 }
 .percent-bar{
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 0.6rem;
+    height: 0.5rem;
     background: var(--main-color);
     border-radius: 0.6rem;
 }
-.html-bar {
+.html-bar{
     width: 95%;
 }
 .css-bar{
     width: 85%;
 }
 .js-bar{
-    width: 75%;
+    width: 77%;
 }
 .php-bar{
     width: 70%;
+}
+/*service*/
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px , auto));
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.services-box{
+    padding: 20px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    border-bottom: 2px solid var(--main-color);
+    box-shadow: 0px 2px 7px rgba(14 55 54/15%);
+}
+.services-box:hover {
+    background: #02225a;
+}
+.services-box h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.7rem 0 0.4rem;
+}
+.services-box .bx{
+    padding-top: 2rem;
+    font-size: 54px;
+    color: var(--main-color);
+}
+.services-box:hover .bx{
+    color: #22cf91;
+}
+.services-box a{
+    color: var(--main-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+}/*41-*/
+
+.services-box a:hover{
+    color: #8b8a8f;
+}
+.Contact-form{
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+}
+.Contact-form form{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+form , input , textarea {
+    padding: 15px;
+    border-radius: 0.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: hsl(260, 100%, 51% , 0.1);
+    margin-bottom: 1rem;
+    color: var(--text-color);
 }
