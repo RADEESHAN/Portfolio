@@ -352,7 +352,9 @@ form textarea {
     :root{
         --big-font:2.7rem;
         --medium-font:1.4rem;
-    }@media (max-width:768px){
+    }  
+    }
+    @media (max-width:768px){
         :root {
             --big-font:2.4rem;
             --medium-font:1.2rem;
@@ -421,11 +423,32 @@ form textarea {
             display: flex;
             justify-content: center;
         }
-        .Contact-form{
+        .Contact-form form{
             width: 300px;
         }
         .Contact-button{
             margin-left: 25%;
         }
     }
-}
+    @media (max-width:340px){
+        :root{
+            --big-font:1.7rem;
+            --medium-font:1.1rem;
+        }
+        .home-text span{
+       font-size: 1rem;     
+        }
+        .home-text h2 {
+        font-size: 0.9rem;
+        font-weight: 500;
+        }
+        .information .info-box {
+            font-size: 1rem;
+        }
+        .Contact-form form {
+            width: 250;
+        }
+        .Contact-button{
+            width: 20%;
+        }
+    }
