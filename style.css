@@ -54,6 +54,9 @@ header{
     box-shadow: -3px -4px 8px #ffffff73, 2px 2px 5px black;
     z-index: 100;
 }
+header.shadow{
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
 
 .logo{
     font-size: 1.6rem;
