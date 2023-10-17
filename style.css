@@ -25,6 +25,12 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
 }
+body.active {
+    background: rgb(19, 4, 87) /* Your dark mode background color */;
+    color: white/* Your dark mode text color */;
+    /* Add any other styles for dark mode */
+}
+
 *::selection{
     background: var(--main-color);
     color: var(--bg-color);
@@ -70,7 +76,14 @@ header.shadow{
 }
 .navbar{
     display: flex;
+    background: var(--bg-color);
+    color: var(--text-color);
 
+}
+body.active {
+    background: rgb(19, 4, 87) /* Your dark mode background color */;
+    color: white/* Your dark mode text color */;
+    /* Add any other styles for dark mode */
 }
 .navbar a{
     font-size: 1.1rem;
